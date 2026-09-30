@@ -51,11 +51,10 @@ Obstétricien, Pédiatre), `sexe` (Garçon, Fille).
   Ne jamais y remettre une clé secrète. Avant, plusieurs clés étaient collées
   ensemble (dont `sb_secret_...`) : cette clé secrète ayant été exposée dans un
   fichier, il faudrait la révoquer dans le tableau de bord Supabase (pas encore fait).
-- Le dossier n'est pas relié à GitHub (pas de `.git`, et `gh` n'est pas
-  connecté depuis la réinitialisation du PC) : le site en ligne
-  https://sps-g41-parto.professeurpetitchat.com/ renvoie 404. Pour la mise en
-  ligne : `gh auth login`, puis suivre la section « Mise en ligne » du
-  CLAUDE.md du dossier parent.
+- Mis en ligne le 30/09/2026 : dépôt GitHub public
+  https://github.com/alexti7902-dot/sps-g41-parto (compte `alexti7902-dot`),
+  site https://sps-g41-parto.professeurpetitchat.com/. Chaque `git push` sur
+  `main` republie le site (workflow `.github/workflows/deploy.yml`).
 - Pour tester en local : Python n'est pas installé sur ce PC ; lancer un petit
   serveur avec Node depuis le dossier `Projets/` (par exemple
   `node -e "…"` sur un port libre), puis ouvrir
